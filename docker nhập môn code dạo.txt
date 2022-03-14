@@ -1,0 +1,32 @@
+Docker giải quyết việc gì:
+khi code trên máy mình thì dùng các công cụ phần mềm như php, mssql, apache 
+deploy lên web thì phải cài các cái trên thì có thể mất thời gian cài và phần mềm không
+tương thích với code
+
+Docker gói những cái môi trường chạy code thành 1 container -> dễ quản lý dễ di chuyển 
+
+Trong docker có 3 khái niệm quan trọng nhất là docker file và docker image và docker container
+
+docker file là 1 file toàn code là công thức pha trà sữa - mô tả môi trường 
+docker imgae là môi trường để pha trà sữa chứa code và môi trường cần thiết
+docker container là trà sữa: bạn kéo về container để chạy code thôi
+
+docker file -> build -> docker image -> run -> docker container
+
+docker -v : checkversion
+docker run hello-world: pull cái image helloworld
+docker ps: xem máy bạn có những container nào 
+docker run: để run 1 container
+docker build : build 1 cái imgae
+sau khi build một cái image xong 
+
+sử dụng dockerhub như 1 cái github
+
+sau dùng docker run -p 5000: 500 -e host...
+
+
+dockerfile: 
+from node -> từ node js làm ơn lấy ra dùng
+workdir
+copy -> copycode vào đây 
+run yam sau đó là build
